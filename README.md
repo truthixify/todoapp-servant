@@ -41,9 +41,9 @@ By default, the application runs on: [http://localhost:8081](http://localhost:80
 ├── src/
 │   ├── Lib.hs              -- API logic
 │   └── Todos/       
-│            └── Types.hs   -- Data types
-│            └── Api.hs     -- API structure 
-│            └── Views.hs   -- HTML view    
+│       └── Types.hs        -- Data types
+│       └── Api.hs          -- API structure 
+│       └── Views.hs        -- HTML view    
 ├── test/
 │   └── Spec.hs             -- Tests
 ├── todoapp-servant.cabal   -- Cabal configuration
