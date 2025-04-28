@@ -76,7 +76,7 @@ renderTodoItem todo =
                     ! class_ (if todoCompleted todo then "line-through text-gray-500" else "")
                     $ toHtml (todoTitle todo)
 
-            -- Left side (delet button)
+            -- Right side (delete button)
             H.div ! class_ "flex items-center gap-2" $ do
                 button
                     ! class_ "bg-red-500 text-white px-1 py-1 rounded hover:bg-red-600 hidden group-hover:block"
