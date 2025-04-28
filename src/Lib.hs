@@ -78,7 +78,7 @@ server todoRef = handleRoot :<|> handleTodoApi
              in (updatedTodos, maybeFoundTodo) -- Return (newState, result)
         case mUpdatedTodo of
             Just updatedTodo -> return $ renderTodoItem updatedTodo
-            Nothing -> throwError err404{errBody = "Todo not found for update"}
+            Nothing -> throwError err404{errBody = "Todo not found"}
 
     handleDeleteTodo :: Int -> Handler Html
     handleDeleteTodo tid = liftIO $ do
